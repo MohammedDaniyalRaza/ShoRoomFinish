@@ -1,3 +1,12 @@
+import work01 from '@/assets/real-work/work-01.webp';
+import work02 from '@/assets/real-work/work-02.webp';
+import work03 from '@/assets/real-work/work-03.webp';
+import work04 from '@/assets/real-work/work-04.webp';
+import work05 from '@/assets/real-work/work-05.webp';
+import work06 from '@/assets/real-work/work-06.webp';
+import work07 from '@/assets/real-work/work-07.webp';
+import work08 from '@/assets/real-work/work-08.webp';
+
 export const phone = '+13072759466';
 export const displayPhone = '(307) 275-9466';
 export const email = 'heavenlyhands4549@gmail.com';
@@ -14,11 +23,24 @@ export const images = [
   'https://images.pexels.com/photos/6873181/pexels-photo-6873181.jpeg?auto=compress&cs=tinysrgb&w=1200',
 ];
 
+export type RealPhoto = { src: string; alt: string; category: string };
+
+export const realWork: RealPhoto[] = [
+  { src: work01, alt: 'Manufactured home exterior with wooden deck steps and a railing', category: 'Decks & Fences' },
+  { src: work02, alt: 'Side of a manufactured home with a window and a wall-mounted air conditioner', category: 'House Washing' },
+  { src: work03, alt: 'Side of a manufactured home with white skirting and a blue tarp on the roof edge', category: 'House Washing' },
+  { src: work04, alt: 'Manufactured home entry with wooden steps and a front door', category: 'House Washing' },
+  { src: work05, alt: 'Side of a manufactured home with light siding and white skirting', category: 'House Washing' },
+  { src: work06, alt: 'Front entry of a manufactured home with wooden steps and a railing', category: 'Decks & Fences' },
+  { src: work07, alt: 'Side of a manufactured home with a shuttered window and a blue roof tarp', category: 'House Washing' },
+  { src: work08, alt: 'Long manufactured home exterior with lattice skirting and shuttered windows', category: 'House Washing' },
+];
+
 export const services = [
-  { number: '01', title: 'Auto Detailing', short: 'Interior & exterior care', description: 'A careful reset for the vehicles you rely on every day. We clean, polish, protect, and finish every surface with showroom-level attention.', image: images[1], icon: '✦', bullets: ['Interior deep clean', 'Exterior wash & polish', 'Protection finish'] },
-  { number: '02', title: 'House Washing', short: 'Soft wash for exteriors', description: 'Give your home a cleaner first impression. Our gentle soft wash approach lifts buildup from siding and exterior walls without harsh treatment.', image: images[4], icon: '⌂', bullets: ['Siding & exterior walls', 'Gentle soft wash', 'Mildew removal'] },
-  { number: '03', title: 'Driveways & Patios', short: 'Concrete, pavers & walks', description: 'Bring back the definition in your outdoor surfaces. We clear away grime, organic buildup, and weathering from the places people see first.', image: images[5], icon: '▦', bullets: ['Driveways & walkways', 'Concrete & pavers', 'Patio refresh'] },
-  { number: '04', title: 'Decks & Fences', short: 'Wood & vinyl restoration', description: 'A more considered clean for outdoor living areas. We refresh wood and vinyl surfaces so they look cared for, not overworked.', image: images[6], icon: '╱', bullets: ['Wood restoration', 'Vinyl cleaning', 'Oxidation removal'] },
+  { number: '01', title: 'Auto Detailing', short: 'Interior & exterior care', description: 'A careful reset for the vehicles you rely on every day. We clean, polish, protect, and finish every surface with showroom-level attention.', image: images[1], photo: images[1], icon: '✦', bullets: ['Interior deep clean', 'Exterior wash & polish', 'Protection finish'] },
+  { number: '02', title: 'House Washing', short: 'Soft wash for exteriors', description: 'Give your home a cleaner first impression. Our gentle soft wash approach lifts buildup from siding and exterior walls without harsh treatment.', image: images[4], photo: realWork[1].src, icon: '⌂', bullets: ['Siding & exterior walls', 'Gentle soft wash', 'Mildew removal'] },
+  { number: '03', title: 'Driveways & Patios', short: 'Concrete, pavers & walks', description: 'Bring back the definition in your outdoor surfaces. We clear away grime, organic buildup, and weathering from the places people see first.', image: images[5], photo: images[5], icon: '▦', bullets: ['Driveways & walkways', 'Concrete & pavers', 'Patio refresh'] },
+  { number: '04', title: 'Decks & Fences', short: 'Wood & vinyl restoration', description: 'A more considered clean for outdoor living areas. We refresh wood and vinyl surfaces so they look cared for, not overworked.', image: images[6], photo: realWork[5].src, icon: '╱', bullets: ['Wood restoration', 'Vinyl cleaning', 'Oxidation removal'] },
 ];
 
 export const reviews = [
